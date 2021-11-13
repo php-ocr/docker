@@ -2,6 +2,8 @@ version: "3.0"
 services:
     application:
         image: php:${PHP_VERSION}
+        environment:
+            - API_KEY
         volumes:
             -
                 type: bind
